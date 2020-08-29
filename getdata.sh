@@ -68,6 +68,7 @@ if [[ ! -d 'penn' ]]; then
     rm -rf simple-examples/
 fi
 
+: <<'END'
 echo "- Downloading 1B words"
 
 if [[ ! -d 'one-billion-words' ]]; then
@@ -85,6 +86,6 @@ if [[ ! -d 'one-billion-words' ]]; then
 
     cd ..
 fi
-
+END
 echo "---"
 echo "Happy language modeling :)"

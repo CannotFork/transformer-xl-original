@@ -1,4 +1,6 @@
 **/__pycache__/
 pytorch/LM-TFM-*/
 data/
+*.tar.gz
+*.zip
 
