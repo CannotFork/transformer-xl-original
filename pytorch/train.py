@@ -17,6 +17,12 @@ from utils.exp_utils import create_exp_dir
 from utils.data_parallel import BalancedDataParallel
 
 parser = argparse.ArgumentParser(description='PyTorch Transformer Language Model')
+parser.add_argument('--num_mem_tokens', type=int, default=0,
+                    help="Number of mem tokens prepended to the input data."
+                         "This version of mem tokens does not include saving "
+                         "mem tokens after each run of the model and using "
+                         "contextual embeddings of mem tokens. In fact, mem tokens"
+                         "are just as not zeroed padding.")
 parser.add_argument('--data', type=str, default='../data/wikitext-103',
                     help='location of the data corpus')
 parser.add_argument('--dataset', type=str, default='wt103',
