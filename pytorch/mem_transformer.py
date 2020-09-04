@@ -655,7 +655,7 @@ class MemTransformerLM(nn.Module):
             "mem_tokens_attend_to_mem_tokens": torch.full(
                 (self.num_mem_tokens, self.num_mem_tokens), False, dtype=torch.bool, device=device)[:, :, None],
             "inputs_attend_to_mem_tokens": torch.full(
-                (qlen, self.num_mem_tokens), True, dtype=torch.bool, device=device)[:, :, None]
+                (qlen, self.num_mem_tokens), False, dtype=torch.bool, device=device)[:, :, None]
         }
         return masks
 
