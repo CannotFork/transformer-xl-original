@@ -362,7 +362,8 @@ if args.cuda and args.fp16:
     optimizer = FP16_Optimizer(optimizer,
                                static_loss_scale = args.static_loss_scale,
                                dynamic_loss_scale = args.dynamic_loss_scale,
-                               dynamic_loss_args = {'init_scale': 2 ** 16})
+                               dynamic_loss_args = {'init_scale': 2 ** 16},
+                               verbose=False)
 
 if args.restart:
     if os.path.exists(os.path.join(args.restart_dir, 'optimizer.pt')):

@@ -8,22 +8,22 @@ if [[ $1 == 'train' ]]; then
         --dataset wt103 \
         --adaptive \
         --n_layer 16 \
-        --d_model 410 \
+        --d_model 408 \
         --n_head 10 \
-        --d_head 41 \
-        --d_inner 2100 \
+        --d_head 48 \
+        --d_inner 2104 \
         --dropout 0.1 \
         --dropatt 0.0 \
         --optim adam \
         --lr 0.00025 \
         --warmup_step 0 \
         --max_step 200000 \
-        --tgt_len 150 \
-        --mem_len 150 \
-        --eval_tgt_len 150 \
-        --batch_size 178 \
+        --tgt_len 152 \
+        --mem_len 152 \
+        --eval_tgt_len 152 \
+        --batch_size 356 \
         --multi_gpu \
-        --gpu0_bsz 40 \
+        --gpu0_bsz 80 \
         --fp16 \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then
