@@ -23,7 +23,7 @@ if [[ $1 == 'train' ]]; then
         --eval_tgt_len 152 \
         --batch_size 1280 \
         --multi_gpu \
-        --gpu0_bsz 200 \
+        --gpu0_bsz 160 \
         --fp16 \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then
