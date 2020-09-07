@@ -1,5 +1,4 @@
 cd transformer-xl-original \
-  && pip install -r requirements.txt \
   && mkdir -p data \
   && cd data \
   && wget --continue https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip \
