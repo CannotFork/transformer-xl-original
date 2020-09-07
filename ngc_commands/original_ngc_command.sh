@@ -1,4 +1,5 @@
 cd transformer-xl-original \
+  && export CUDA_VISIBLE_DEVICES=0,1,2,3 \
   && mkdir -p data \
   && cd data \
   && wget --continue https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip \
