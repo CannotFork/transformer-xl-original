@@ -11,5 +11,5 @@ cd transformer-xl-original \
   && cd ../.. \
   && echo 'Run training...' \
   && cd pytorch \
-  && bash run_wt103_base.sh train  
+  && bash run_wt103_base_ngc.sh train  
 
