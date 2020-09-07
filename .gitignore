@@ -3,4 +3,4 @@ pytorch/LM-TFM-*/
 data/
 *.tar.gz
 *.zip
-
+*.swp
