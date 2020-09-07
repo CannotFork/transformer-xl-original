@@ -7,16 +7,6 @@
    "publishedContainerPorts": [
      6006
    ],
-   "datasetMounts": [
-     {
-        "containerMountPoint": "/dataset",
-        "id": 64638
-     },
-     {
-        "containerMountPoint": "/infer",
-        "id": 61202
-     }     
-   ],
    "resultContainerMountPoint": "/result",
    "runPolicy": {
        "preemptClass": "RUNONCE"
